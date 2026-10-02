@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Patitas Felices | Carrito</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+<header class="Headthing">
+
+    <div class="logo">
+        <img src="assets/PATITAS.jpg" alt="Logo de Patitas Felices" class="logo-img">
+        PATITAS FELICES
+    </div>
+
+    <nav>
+
+        <a href="index.html">INICIO</a>
+
+         <a href="nosotros.html">NOSOTROS</a>
+
+        <a href="productos.html">PRODUCTOS</a>
+
+        <a href="carrito.html">CARRITO</a>
+
+        <div class="menu-usuario" id="menuUsuario" data-logueado="false">
+
+                <button type="button" class="menu-usuario-boton" id="menuUsuarioBoton">
+                    <span id="menuUsuarioTexto">INICIO SESIÓN</span>
+                    <span class="menu-usuario-flecha">▾</span>
+                </button>
+
+                <div class="menu-usuario-dropdown" id="menuUsuarioDropdown">
+
+                    <div class="menu-usuario-datos">
+                        <p class="menu-usuario-nombre" id="menuUsuarioNombre"></p>
+                        <p class="menu-usuario-correo" id="menuUsuarioCorreo"></p>
+                    </div>
+
+                    <a href="perfil.html">Mi perfil</a>
+
+                    <button type="button" class="menu-usuario-cerrar" id="menuUsuarioCerrarSesion">
+                        Cerrar sesión
+                    </button>
+
+                </div>
+
+            </div>
+
+    </nav>
+
+</header>
+
+
+<main class="contenedor">
+
+   
+
+
+    <section class="carrito-contenedor">
+
+        <div id="productosCarrito">
+
+            <!-- JavaScript mostrará los productos -->
+
+        </div>
+
+
+        <div class="resumen-carrito">
+
+            <h2>Resumen de compra</h2>
+
+            <p>
+                Subtotal:
+                <strong id="subtotal">
+                    S/ 0.00
+                </strong>
+            </p>
+
+            <p>
+                Envío:
+                <strong>
+                    S/ 5.00
+                </strong>
+            </p>
+
+            <hr>
+
+            <p class="total">
+
+                Total:
+                <strong id="total">
+                    S/ 0.00
+                </strong>
+
+            </p>
+
+            <a
+    href="datos-entrega.html"
+    class="boton boton-comprar">
+
+    Realizar pedido
+
+</a>
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>© 2026 Patitas Felices. Todos los derechos reservados.</p>
+
+    </footer>
+
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

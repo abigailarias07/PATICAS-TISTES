@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patitas Felices | Sobre Nosotros</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="Headthing">
+
+       <div class="logo">
+       <img src="assets/PATITAS.jpg" alt="Logo de Patitas Felices" class="logo-img">
+       PATITAS FELICES 
+       </div>
+
+
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="nosotros.html">NOSOTROS</a>
+            <a href="productos.html">PRODUCTOS</a>
+            <a href="carrito.html">CARRITO </a>
+            <div class="menu-usuario" id="menuUsuario" data-logueado="false">
+
+                <button type="button" class="menu-usuario-boton" id="menuUsuarioBoton">
+                    <span id="menuUsuarioTexto">INICIO SESIÓN</span>
+                    <span class="menu-usuario-flecha">▾</span>
+                </button>
+
+                <div class="menu-usuario-dropdown" id="menuUsuarioDropdown">
+
+                    <div class="menu-usuario-datos">
+                        <p class="menu-usuario-nombre" id="menuUsuarioNombre"></p>
+                        <p class="menu-usuario-correo" id="menuUsuarioCorreo"></p>
+                    </div>
+
+                    <a href="perfil.html">Mi perfil</a>
+
+                    <button type="button" class="menu-usuario-cerrar" id="menuUsuarioCerrarSesion">
+                        Cerrar sesión
+                    </button>
+
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= SOBRE NOSOTROS ================= -->
+
+    <main>
+
+        <section id="nosotros" class="contenedor">
+
+            <h1 class="titulo">Sobre Nosotros</h1>
+
+            <p class="subtitulo" style="margin-bottom: 10px;">
+                Somos una tienda comprometida con la salud y felicidad de tus mascotas, ofreciendo productos de alta calidad y un trato amigable.
+            </p>
+
+            <!-- FOTO DEL LOCAL Y UBICACIÓN -->
+            <div class="location-grid">
+
+                <div class="card-box">
+                    <img src="https://via.placeholder.com/500x300?text=Foto+de+Nuestro+Local" alt="Foto de la tienda Patitas Felices">
+                    <p style="margin-top: 8px; font-weight: 600;">📍 ¡Ven a visitarnos!</p>
+                </div>
+
+                <div class="card-box">
+                    <iframe src="https://maps.google.com/maps?q=Lima,Peru&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    <p style="margin-top: 8px; font-weight: 600;">🏠 Av. Principal #123 - Tu Ciudad</p>
+                </div>
+
+            </div>
+
+            <!-- RAZONES PARA RECOMENDARNOS -->
+            <h2 style="margin-top: 30px;">¿Por qué elegirnos?</h2>
+
+            <div class="reasons-grid">
+
+                <div class="reason-card">
+                    <div>🥇</div>
+                    <h3>Calidad Garantizada</h3>
+                    <p>Trabajamos solo con las mejores marcas y productos certificados para la salud animal.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div>❤️</div>
+                    <h3>Atención con Amor</h3>
+                    <p>Tratamos a tu mascota como si fuera parte de nuestra propia familia.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div>🚚</div>
+                    <h3>Envíos Rápidos</h3>
+                    <p>Llevamos tus alimentos y accesorios directamente a la puerta de tu casa.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div>💰</div>
+                    <h3>Precios Justos</h3>
+                    <p>Grandes ofertas y promociones semanales para cuidar tu bolsillo.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>© 2026 Patitas Felices. Todos los derechos reservados.</p>
+
+    </footer>
+
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

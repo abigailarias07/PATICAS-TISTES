@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patitas Felices | Tienda para mascotas</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="Headthing">
+
+       <div class="logo">
+       <img src="assets/PATITAS.jpg" alt="Logo de Patitas Felices" class="logo-img">
+       PATITAS FELICES 
+       </div>
+
+
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="nosotros.html">NOSOTROS</a>
+            <a href="productos.html">PRODUCTOS</a>
+            <a href="carrito.html">CARRITO </a>
+            <div class="menu-usuario" id="menuUsuario" data-logueado="false">
+
+                <button type="button" class="menu-usuario-boton" id="menuUsuarioBoton">
+                    <span id="menuUsuarioTexto">INICIO SESIÓN</span>
+                    <span class="menu-usuario-flecha">▾</span>
+                </button>
+
+                <div class="menu-usuario-dropdown" id="menuUsuarioDropdown">
+
+                    <div class="menu-usuario-datos">
+                        <p class="menu-usuario-nombre" id="menuUsuarioNombre"></p>
+                        <p class="menu-usuario-correo" id="menuUsuarioCorreo"></p>
+                    </div>
+
+                    <a href="perfil.html">Mi perfil</a>
+
+                    <button type="button" class="menu-usuario-cerrar" id="menuUsuarioCerrarSesion">
+                        Cerrar sesión
+                    </button>
+
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= INICIO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-texto">
+
+                <h1>TODO PARA TU MEJOR AMIGO </h1>
+
+                <p>
+                    Encuentra comida, ropa, accesorios y productos
+                    para cuidar y consentir a tu mascota.
+                </p>
+
+                <a href="productos.html" class="boton">
+                    Ver productos
+                </a>
+                
+                <a href="https://wa.me/51912345678" target="_blank" class="btn-whatsapp">
+                    Escríbenos por WhatsApp
+                </a>
+                
+                <style>
+                .btn-whatsapp {
+                    display: inline-block;
+                    background-color: #25D366;
+                    color: white;
+                    padding: 12px 22px;
+                    border-radius: 12px;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                    transition: 0.3s;
+                }
+                
+                .btn-whatsapp:hover {
+                    background-color: #1d8848;
+                    
+                }
+                </style>
+
+            </div>
+
+
+            <div class="hero-imagen">
+
+                <!-- AQUÍ PUEDES COLOCAR TU IMAGEN -->
+
+                <div class="espacio-imagen">
+                 <img src="assets/dogs-5538401_640.jpg" alt="Descripción de la imagen" width="110%">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORÍAS ================= -->
+
+        <section class="categorias">
+
+            <h2>ENCUENTRA TODO LO QUE NECESITAS</h2>
+
+            <div class="categoria-contenedor">
+
+                <div class="categoria">
+                    <span>🍖</span>
+                    <h3>Alimentos</h3>
+                    <p>Comida para perros y gatos.</p>
+                </div>
+
+                <div class="categoria">
+                    <span>👕</span>
+                    <h3>Ropa</h3>
+                    <p>Prendas cómodas para tu mascota.</p>
+                </div>
+
+                <div class="categoria">
+                    <span>🐕</span>
+                    <h3>Accesorios</h3>
+                    <p>Collares, correas y mucho más.</p>
+                </div>
+
+                <div class="categoria">
+                    <span>💊</span>
+                    <h3>Cuidado</h3>
+                    <p>Productos para su cuidado.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>© 2026 Patitas Felices. Todos los derechos reservados.</p>
+
+    </footer>
+
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patitas Felices | Productos</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<header class="Headthing">
+
+   <div class="logo">
+       <img src="assets/PATITAS.jpg" alt="Logo de Patitas Felices" class="logo-img">
+       PATITAS FELICES 
+       </div>
+    <nav>
+
+        <a href="index.html">INICIO</a>
+        <a href="nosotros.html">NOSOTROS</a>
+
+        <a href="productos.html">PRODUCTOS</a> 
+        <a href="carrito.html">
+            CARRITO 
+            <span id="contadorCarrito">0</span>
+        </a>
+
+        <div class="menu-usuario" id="menuUsuario" data-logueado="false">
+
+                <button type="button" class="menu-usuario-boton" id="menuUsuarioBoton">
+                    <span id="menuUsuarioTexto">INICIO SESIÓN</span>
+                    <span class="menu-usuario-flecha">▾</span>
+                </button>
+
+                <div class="menu-usuario-dropdown" id="menuUsuarioDropdown">
+
+                    <div class="menu-usuario-datos">
+                        <p class="menu-usuario-nombre" id="menuUsuarioNombre"></p>
+                        <p class="menu-usuario-correo" id="menuUsuarioCorreo"></p>
+                    </div>
+
+                    <a href="perfil.html">Mi perfil</a>
+
+                    <button type="button" class="menu-usuario-cerrar" id="menuUsuarioCerrarSesion">
+                        Cerrar sesión
+                    </button>
+
+                </div>
+
+            </div>
+
+    </nav>
+
+</header>
+
+
+<main class="contenedor">
+
+    <h1 class="titulo">Nuestros productos</h1>
+
+    <p class="subtitulo">
+        Todo lo que tu mascota necesita en un solo lugar.
+    </p>
+
+
+    <!-- FILTROS -->
+
+    <div class="filtros">
+
+        <button onclick="mostrarProductos('todos')">
+            TODO
+        </button>
+
+        <button onclick="mostrarProductos('ALIMENTOS')">
+            ALIMENTOS
+        </button>
+
+        <button onclick="mostrarProductos('ROPA')">
+           ROPA
+        </button>
+
+        <button onclick="mostrarProductos('ACCESORIOS')">
+           ACCESORIOS
+        </button>
+
+        <button onclick="mostrarProductos('CUIDADO')">
+            CUIDADO 
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCTOS -->
+
+    <section
+        id="listaProductos"
+        class="productos-grid">
+
+        <!-- JavaScript colocará aquí los productos -->
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>🐾 © 2026 Patitas Felices. Todos los derechos reservados.</p>
+
+</footer>
+
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
